@@ -12,11 +12,11 @@ def main():
   GPIO.setup(pin_num, GPIO.OUT)   # 出力モード
 
   # 点滅を10回繰り返し
-  for i in range(10):
+  for i in range(100):
     GPIO.output(pin_num, GPIO.HIGH) # 点灯
-    time.sleep(2)                   # 2秒待機
+    time.sleep(1)                   # 2秒待機
     GPIO.output(pin_num, GPIO.LOW)  # 消灯
-    time.sleep(2)                   # 2秒待機
+    time.sleep(1)                   # 2秒待機
 
   # GPIOピンの設定解除
   GPIO.cleanup()

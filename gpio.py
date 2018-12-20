@@ -5,12 +5,11 @@ import time
 
 def main():
   # 使用する出力ピン(GPIO)
-  pin_num = 14
-
   # GPIOピンの定義
   # GPIO番号で指定
-  GPIO.setmode(GPIO.BCM)
+  pin_num = 14
   # 出力モード
+  GPIO.setmode(GPIO.BCM)
   GPIO.setup(pin_num, GPIO.OUT)
 
   # 点滅を100回繰り返し

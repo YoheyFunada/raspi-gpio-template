@@ -15,12 +15,17 @@ def main():
 
   # 点滅を100回繰り返し
   for i in range(100):
-    GPIO.output(pin_num, GPIO.HIGH) # 点灯
+    # 点灯
+    GPIO.output(pin_num, GPIO.HIGH)
     print("HIGH")
-    time.sleep(1)                   # 1秒待機
+    # 1秒待機
+    time.sleep(1)
+    # 消灯
     GPIO.output(pin_num, GPIO.LOW)
-    print("LOW")  # 消灯
-    time.sleep(1)                   # 1秒待機
+    print("LOW")
+    # 1秒待機
+    time.sleep(1)
+    print(i)
 
   # GPIOピンの設定解除
   GPIO.cleanup()
